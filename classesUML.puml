@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Main
+class Controlador
+class Grafo
+
+Main ...> Controlador
+Controlador ...> Grafo
+
+class Controlador {
+    - nodos: hashMap<String, Integer>
+    - lineas: ArrayList<String>
+    + printMatriz(): String
+    + printCalculos(): String
+    + modificarRuta(): String
+}
+   class Main {
+   +static void main(String[] args)
+
+
+   }
+   class Grafo{
+    - nodos: hashMap<String, Integer>
+    - matrizFloyd: <Integer>
+    + grafo()
+    + modificarRuta(): String
+    + importText ()
+
+   }
+
+
+
+
+@enduml
