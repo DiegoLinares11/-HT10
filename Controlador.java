@@ -36,4 +36,20 @@ public class Controlador {
         }
         grafito.Floyd();
     }
+
+    public String imprimirCalculos(){
+        return "Matriz con calculos de floyd:" + "\n" + grafito.impresionFloyd();
+    }
+    
+    public String imprimirMatriz(){
+        return "Matriz original:" + "\n" +grafito.impresionAdj();
+    }
+    
+    public String imprimirInfo(String fila, String columna){
+        return grafito.ruta(nodos.get(fila)-1, nodos.get(columna)-1);
+    }
+    
+    public String imprimirCentro(){
+        return grafito.centro();
+    }
 }
