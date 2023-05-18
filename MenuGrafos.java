@@ -12,7 +12,7 @@ public class MenuGrafos {
         String opcion = "";
         while (!opcion.equals("7")) {
             System.out.print(
-                    "Ingrese una opcion");
+                    "Ingrese una opcion\n");
             System.out.println("1. Mostrar ruta entre 2 ciudades y su peso(distancia)");
             System.out.println("2. Mostrar centro");
             System.out.println("3. Realizar una interrupcion entre ciudades");

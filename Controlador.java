@@ -1,5 +1,7 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -72,7 +74,9 @@ public class Controlador {
     public void importText() {
         File inputStream = null;
         try {
-            inputStream = new File(System.getProperty("logistica.txt"));
+            // BufferedReader br = new BufferedReader(new FileReader("logistica.txt"));
+            inputStream = new File(
+                    "C:\\Users\\HP\\Escritorio\\Universidad central\\Segundo semestre\\POO\\-HT10\\logistica.txt");
             Scanner myReader = new Scanner(inputStream);
             while (myReader.hasNextLine()) {
                 lineas.add(myReader.nextLine());
