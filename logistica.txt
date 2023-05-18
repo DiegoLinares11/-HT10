@@ -1,0 +1,9 @@
+BuenosAires SaoPaulo 10 12 15 20
+BuenosAires Lima 15 13 14 19
+SaoPaulo BuenosAires 13 18 23 20
+SaoPaulo Lima 12 23 24 15  
+SaoPaulo Quito 7 10 11 12
+Lima BuenosAires 10 11 12 14 
+Lima Quito 9 18 10 21
+Quito SaoPaulo 5 12 12 12
+Quito Lima 4 12 12 12 

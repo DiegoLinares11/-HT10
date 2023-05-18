@@ -37,19 +37,33 @@ public class Controlador {
         grafito.Floyd();
     }
 
-    public String imprimirCalculos(){
+    public String imprimirCalculos() {
         return "Matriz con calculos de floyd:" + "\n" + grafito.impresionFloyd();
     }
-    
-    public String imprimirMatriz(){
-        return "Matriz original:" + "\n" +grafito.impresionAdj();
+
+    public String imprimirMatriz() {
+        return "Matriz original:" + "\n" + grafito.impresionAdj();
     }
-    
-    public String imprimirInfo(String fila, String columna){
-        return grafito.ruta(nodos.get(fila)-1, nodos.get(columna)-1);
+
+    public String imprimirInfo(String fila, String columna) {
+        return grafito.ruta(nodos.get(fila) - 1, nodos.get(columna) - 1);
     }
-    
-    public String imprimirCentro(){
+
+    public String imprimirCentro() {
         return grafito.centro();
     }
+
+    public void modificarRuta(String fila, String columna, int n) {
+        grafito.setMatriz(nodos.get(fila) - 1, nodos.get(columna) - 1, n);
+        grafito.setCaminos(nodos.get(fila) - 1, nodos.get(columna) - 1);
+    }
+
+    public void Interrupcion(String fila, String columna) {
+        grafito.setInterrupcion(nodos.get(fila) - 1, nodos.get(columna) - 1);
+    }
+
+    public void ReCalcular() {
+        grafito.Floyd();
+    }
+
 }
