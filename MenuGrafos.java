@@ -4,7 +4,7 @@ public class MenuGrafos {
 
     public static void main(String[] args) {
         Controlador op = new Controlador();
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
         op.importText();
         String fila = "", columna = "";
         int valor = 0;
@@ -20,7 +20,7 @@ public class MenuGrafos {
             System.out.println("5. Mostrar matriz de adyacencia");
             System.out.println("6. Mostrar matriz con calculos de floyd");
             System.out.println("7. Salir");
-        
+
             opcion = scanner.nextLine();
             if (opcion.equals("1")) {
                 System.out.print("Ingrese ciudad de inicio: ");
@@ -58,5 +58,3 @@ public class MenuGrafos {
     }
 
 }
-
-

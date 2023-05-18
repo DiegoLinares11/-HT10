@@ -40,22 +40,22 @@ public class Controlador {
         grafito.Floyd();
     }
 
-    public String imprimirCalculos(){
+    public String imprimirCalculos() {
         return "Matriz con calculos de floyd:" + "\n" + grafito.impresionFloyd();
     }
-    
-    public String imprimirMatriz(){
-        return "Matriz original:" + "\n" +grafito.impresionAdj();
+
+    public String imprimirMatriz() {
+        return "Matriz original:" + "\n" + grafito.impresionAdj();
     }
-    
-    public String imprimirInfo(String fila, String columna){
-        return grafito.ruta(nodos.get(fila)-1, nodos.get(columna)-1);
+
+    public String imprimirInfo(String fila, String columna) {
+        return grafito.ruta(nodos.get(fila) - 1, nodos.get(columna) - 1);
     }
-    
-    public String imprimirCentro(){
+
+    public String imprimirCentro() {
         return grafito.centro();
     }
-    
+
     public void modificarRuta(String fila, String columna, int n) {
         grafito.setMatriz(nodos.get(fila) - 1, nodos.get(columna) - 1, n);
         grafito.setCaminos(nodos.get(fila) - 1, nodos.get(columna) - 1);
@@ -75,11 +75,12 @@ public class Controlador {
             inputStream = new File(System.getProperty("logistica.txt"));
             Scanner myReader = new Scanner(inputStream);
             while (myReader.hasNextLine()) {
-              lineas.add(myReader.nextLine());
+                lineas.add(myReader.nextLine());
             }
             myReader.close();
         } catch (FileNotFoundException ex) {
 
         }
+
     }
 }
